@@ -1,6 +1,9 @@
 // types
 import { Posts } from "../../types/models";
 
+// components
+import PostCard from "../../components/PostCard/PostCard";
+
 // style
 import styles from "./Post.module.css";
 
@@ -17,7 +20,7 @@ const Post = (props: PostsProps): JSX.Element => {
     <div className={styles.container}>
       <h1>Post page</h1>
       {posts.map((post: Posts) => (
-        <p key={post.id}>{post.title}</p>
+        <PostCard key={post.id} post={post} />
       ))}
     </div>
   );

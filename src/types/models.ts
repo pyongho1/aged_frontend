@@ -4,6 +4,7 @@ export interface Posts {
   title: string;
   content: string;
   date: Date;
+  id: number;
   createdAt: string;
   updatedAt: string;
 }
