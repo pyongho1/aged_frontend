@@ -1,6 +1,12 @@
 /* ---------===== custom props ====--------- */
 
-
+export interface Posts {
+  title: string;
+  content: string;
+  date: Date;
+  createdAt: string;
+  updatedAt: string;
+}
 
 /* ---------===== auth models =====--------- */
 
